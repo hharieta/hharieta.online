@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import { Box } from '@chakra-ui/react'
 
 const Footer = () => {

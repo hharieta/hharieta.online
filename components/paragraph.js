@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import styled from '@emotion/styled'
 
 const Paragraph = styled.p`

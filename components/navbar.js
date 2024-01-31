@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import { forwardRef } from 'react'
 import Logo from './logo'
 import NextLink from 'next/link'
