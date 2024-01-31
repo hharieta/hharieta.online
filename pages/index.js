@@ -86,7 +86,7 @@ const Home = () => (
           . where I leverage my skills in infrastructure as code. 
           Using Pulumi SDK with Python, I specialize in crafting deployment templates tailored for AWS. 
           My responsibilities extend to configuring Docker environments for developers,
-          organizing and maintaining the project's GitHub repository;
+          organizing and maintaining the GitHub repository;
           ensuring streamlined structure, clear documentation, and effective version control. 
           Additionally, I have successfully implemented AWS CRUD operations for DynamoDB, 
           showcasing my proficiency in cloud technologies and infrastructure management. 

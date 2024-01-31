@@ -11,7 +11,7 @@ const SketchfabEmbed = () => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="https://sketchfab.com/api/sketchfab-viewer-1.0.0.js"></script>
+        <script async src="https://sketchfab.com/api/sketchfab-viewer-1.0.0.js"></script>
       </Head>
       <div className="sketchfab-embed-wrapper" style={divStyle}>
         <iframe
