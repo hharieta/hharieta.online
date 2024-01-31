@@ -79,18 +79,15 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          I am a dedicated student pursuing a degree in Systems Engineering, 
-          passionate about bridging the gap between theory and practical application. 
-          Currently, I am actively contributing to a project named Archie
-          where I leverage my skills in infrastructure as code. 
-          Using Pulumi SDK with Python, I specialize in crafting deployment templates tailored for AWS. 
-          My responsibilities extend to configuring Docker environments for developers,
-          organizing and maintaining the GitHub repository;
-          ensuring streamlined structure, clear documentation, and effective version control. 
-          Additionally, I have successfully implemented AWS CRUD operations for DynamoDB, 
-          showcasing my proficiency in cloud technologies and infrastructure management. 
-          Through these experiences, I continually strive to enhance my knowledge and 
-          make meaningful contributions to the realm of systems engineering and cloud computing.
+          Gatovsky is a dedicated student pursuing a degree in Systems Engineering.
+          Python is his favorite language and which he masters best, 
+          he performs optimally in the use of technologies such as Docker, 
+          Pulumi SDK, Bash and K8S integrated with AWS and GCP cloud services.
+          Currently, he&apos;s actively contributing to a project named{' '}
+          <Link as={NextLink} href="https://archie-sandbox.cloudbuddies.online/" target="_blank" passHref scroll={false}>
+          Archie
+          </Link>
+          {' '}where leverage his skills in infrastructure as code.
         </Paragraph>
 
         <Box align="center" my={4}>
@@ -110,23 +107,27 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
-        <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+        <BioSection style={{marginBottom: '1rem'}}>
+          <BioYear>1991</BioYear>
+          Born in Cancún (🏖️), Mexico.
         </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+        <BioSection style={{marginBottom: '1rem'}}>
+          <BioYear>2020 to present</BioYear>
+          Pursuing a degree in Systems Engineering at 
+          Instituto Tecnológico de Cancún
         </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+        <BioSection style={{marginBottom: '1rem'}}>
+          <BioYear>2022 to present</BioYear>
+          Working part-time at{' '} <Link as={NextLink} href="https://www.cloudbuddies.io/" target="_blank" passHref scroll={false}>
+            Cloudbuddies
+          </Link> {' '}as a jr Cloud Engineer
         </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+        <BioSection style={{marginBottom: '1rem'}}>
+          <BioYear>2023 to present</BioYear>
+          Working part-time at{' '} 
+          <Link as={NextLink} href="https://jinicuil.com/" target="_blank" passHref scroll={false}>
+            Jinicuil
+          </Link> {' '}as trainee in Networking
         </BioSection>
       </Section>
 
@@ -135,15 +136,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          Python, Linux, Docker, Bash, and Vim.
         </Paragraph>
       </Section>
 
@@ -198,7 +191,7 @@ const Home = () => (
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://www.youtube.com/devaslife"
             title="Dev as Life"
@@ -213,7 +206,7 @@ const Home = () => (
           >
             A Markdown note-taking app
           </GridItem>
-        </SimpleGrid>
+        </SimpleGrid> */}
 
         <Heading as="h3" variant="section-title">
           Contact

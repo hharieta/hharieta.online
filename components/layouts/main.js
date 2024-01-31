@@ -26,11 +26,11 @@ const Main = ({ children, router }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@SectaPythonica" />
         <meta name="twitter:creator" content="@SectaPythonica" />
-        <meta name="twitter:image" content="https://cdn.glitch.global/d2f60e58-9efe-4a05-bb88-fd4999848107/itc.jpeg?v=1706687601794" />
+        <meta name="twitter:image" content="https://cdn.glitch.global/d2f60e58-9efe-4a05-bb88-fd4999848107/IMG_4537.JPG?v=1706724595512" />
         <meta property="og:site_name" content="Inge Gatovsky" />
         <meta name="og:title" content="Inge Gatovsky" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://cdn.glitch.global/d2f60e58-9efe-4a05-bb88-fd4999848107/itc.jpeg?v=1706687601794" />
+        <meta property="og:image" content="https://cdn.glitch.global/d2f60e58-9efe-4a05-bb88-fd4999848107/IMG_4537.JPG?v=1706724595512" />
         <title>Inge Gatovsky</title>
       </Head>
 
