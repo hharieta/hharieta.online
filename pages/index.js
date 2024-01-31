@@ -79,11 +79,8 @@ const Home = () => (
         <Paragraph>
           I am a dedicated student pursuing a degree in Systems Engineering, 
           passionate about bridging the gap between theory and practical application. 
-          Currently, I am actively contributing to a project named{' '} 
-          <Link as={NextLink} href="https://archie-sandbox.cloudbuddies.online/" target='blank' passHref scroll={false}>
-            Archie
-          </Link>
-          {' '}where I leverage my skills in infrastructure as code. 
+          Currently, I am actively contributing to a project named Archie
+          where I leverage my skills in infrastructure as code. 
           Using Pulumi SDK with Python, I specialize in crafting deployment templates tailored for AWS. 
           My responsibilities extend to configuring Docker environments for developers,
           organizing and maintaining the GitHub repository;
