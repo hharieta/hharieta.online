@@ -217,7 +217,7 @@ const Home = () => (
           Contact
         </Heading>
         <p>
-        Feel free to reach out! I welcome any inquiries or opportunities for collaboration.
+        Feel free to reach out. I welcome any inquiries or opportunities for collaboration.
         </p>
 
         <Box align="center" my={4}>
