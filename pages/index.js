@@ -6,7 +6,7 @@ import {
   Container,
   Heading,
   Box,
-  // SimpleGrid,
+  SimpleGrid,
   Button,
   List,
   ListItem,
@@ -17,10 +17,14 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-// import { GridItem } from '../components/grid-item'
+import { GridSkill } from '../components/grid-skills'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-// import thumbYouTube from '../public/images/links/youtube.png'
-// import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import thumbBash from '../public/images/skills/bash-icon-svgrepo-com.svg'
+import thumbPython from '../public/images/skills/python-svgrepo-com.svg'
+import thumbDocker from '../public/images/skills/docker-svgrepo-com.svg'
+import thumbLinux from '../public/images/skills/linux-svgrepo-com.svg'
+import thumbPulumi from '../public/images/skills/pulumi.svg'
+import thumbK8S from '../public/images/skills/kubernetes-svgrepo-com.svg'
 import Image from 'next/image'
 
 const email = () => {
@@ -105,22 +109,27 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          Expirience
         </Heading>
         <BioSection style={{marginBottom: '1rem'}}>
-          <BioYear>1991</BioYear>
-          Born in Cancún (🏖️), Mexico.
-        </BioSection>
-        <BioSection style={{marginBottom: '1rem'}}>
-          <BioYear>2020 to present</BioYear>
-          Pursuing a degree in Systems Engineering at 
-          Instituto Tecnológico de Cancún
-        </BioSection>
-        <BioSection style={{marginBottom: '1rem'}}>
           <BioYear>2022 to present</BioYear>
-          Working part-time at{' '} <Link as={NextLink} href="https://www.cloudbuddies.io/" target="_blank" passHref scroll={false}>
+          Working on remote at{' '} <Link as={NextLink} href="https://www.cloudbuddies.io/" target="_blank" passHref scroll={false}>
             Cloudbuddies
-          </Link> {' '}as a jr Cloud Engineer
+          </Link> {' '}as jr Cloud Engineer.
+          <ul style={{textAlign: 'justify', listStyleType: 'square', textIndent: 0}}>
+            <li>
+            Module development with Python implementing Pulumi SDK for SaaS platforms
+            </li>
+            <li>
+            Use of AWS services for cloud development (API Gateway, Lambda, ECR, EC2, S3, DynamoDB, RDS, CloudWatch)
+            </li>
+            <li >
+            Process automation with Bash and Docker for local development environments on Linux, Windows and MacOS systems
+            </li>
+            <li >
+            Refactor code and maintenance of Github Repositories
+            </li>
+          </ul>
         </BioSection>
         <BioSection style={{marginBottom: '1rem'}}>
           <BioYear>2023 to present</BioYear>
@@ -133,12 +142,73 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
+        Academic Training
+        </Heading>
+        <BioSection>
+          <BioYear>2020 to present</BioYear>
+          Pursuing a degree in Systems Engineering at Instituto Tecnológico de Cancún.
+          Currently starting the 4th year
+        </BioSection>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Skills
+        </Heading>
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <GridSkill
+            href=""
+            title="Bash Scripting"
+            thumbnail={thumbBash}
+          >
+            well-suited for automating tasks and interacting with the command line.
+          </GridSkill>
+          <GridSkill
+            href=""
+            title="Python"
+            thumbnail={thumbPython}
+          >
+            My favorite language, I use it for everything.
+          </GridSkill>
+          <GridSkill
+            href=""
+            title="Docker"
+            thumbnail={thumbDocker}
+          >
+            My favorite tool for create containers.
+          </GridSkill>
+          <GridSkill
+            href=""
+            title="Linux"
+            thumbnail={thumbLinux}
+          >
+            I use it as my daily driver and for my servers.
+          </GridSkill>
+          <GridSkill
+            href=""
+            title="Pulumi SDK"
+            thumbnail={thumbPulumi}
+          >
+            I use it to create infrastructure as code.
+          </GridSkill>
+          <GridSkill
+            href=""
+            title="Kubernetes"
+            thumbnail={thumbK8S}
+          >
+            My favorite orchestrator of containers
+          </GridSkill>
+        </SimpleGrid>
+      </Section>
+
+      {/* <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
           I ♥
         </Heading>
         <Paragraph>
           Python, Linux, Docker, Bash, and Vim.
         </Paragraph>
-      </Section>
+      </Section> */}
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
@@ -190,23 +260,6 @@ const Home = () => (
             </Link>
           </ListItem>
         </List>
-
-        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;150k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid> */}
 
         <Heading as="h3" variant="section-title">
           Contact
