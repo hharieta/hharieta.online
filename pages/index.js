@@ -17,14 +17,8 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridSkill } from '../components/grid-skills'
+import CredlyBadge from '../components/badges'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-import thumbBash from '../public/images/skills/bash-icon-svgrepo-com.svg'
-import thumbPython from '../public/images/skills/python-svgrepo-com.svg'
-import thumbDocker from '../public/images/skills/docker-svgrepo-com.svg'
-import thumbLinux from '../public/images/skills/linux-svgrepo-com.svg'
-import thumbPulumi from '../public/images/skills/pulumi.svg'
-import thumbK8S from '../public/images/skills/kubernetes-svgrepo-com.svg'
 import Image from 'next/image'
 
 const email = () => {
@@ -156,48 +150,19 @@ const Home = () => (
           Skills
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridSkill
-            href=""
-            title="Bash Scripting"
-            thumbnail={thumbBash}
-          >
-            well-suited for automating tasks and interacting with the command line.
-          </GridSkill>
-          <GridSkill
-            href=""
-            title="Python"
-            thumbnail={thumbPython}
-          >
-            My favorite language, I use it for everything.
-          </GridSkill>
-          <GridSkill
-            href=""
-            title="Docker"
-            thumbnail={thumbDocker}
-          >
-            My favorite tool for create containers.
-          </GridSkill>
-          <GridSkill
-            href=""
-            title="Linux"
-            thumbnail={thumbLinux}
-          >
-            I use it as my daily driver and for my servers.
-          </GridSkill>
-          <GridSkill
-            href=""
-            title="Pulumi SDK"
-            thumbnail={thumbPulumi}
-          >
-            I use it to create infrastructure as code.
-          </GridSkill>
-          <GridSkill
-            href=""
-            title="Kubernetes"
-            thumbnail={thumbK8S}
-          >
-            My favorite orchestrator of containers
-          </GridSkill>
+        <CredlyBadge 
+          id="ba7f4454-da0c-4b63-90a1-6c2c7280c2c6"
+          host="https://www.credly.com"
+        ></CredlyBadge>
+        <CredlyBadge 
+          id="3a032413-10ff-430e-863f-72341a35e177"
+          host="https://www.credly.com"
+        ></CredlyBadge>
+        <CredlyBadge 
+          id="dc817c2c-502f-4b26-bd26-8d402d9b48f9"
+          host="https://www.credly.com"
+        ></CredlyBadge>
+         
         </SimpleGrid>
       </Section>
 
