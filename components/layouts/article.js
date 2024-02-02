@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Head from 'next/head'
-import { GridSkillStyle } from '../grid-skills'
+import { GridCourseStyle } from '../grid-course'
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },
@@ -31,7 +31,7 @@ const Layout = ({ children, title }) => {
         )}
         {children}
 
-        <GridSkillStyle />
+        <GridCourseStyle />
       </>
     </motion.article>
   )

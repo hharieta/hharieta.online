@@ -17,9 +17,12 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import CredlyBadge from '../components/badges'
+import { GridCourse } from '../components/grid-course'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Image from 'next/image'
+import thumbPyton from '../public/images/courses/python-essentials-1.1.png'
+import thumbDocker from '../public/images/courses/docker-essentials.png'
+import thumbPythonDataScience from '../public/images/courses/python-for-data-science.png'
 
 const email = () => {
   return process.env.EMAIL_ADDRESS;
@@ -146,23 +149,28 @@ const Home = () => (
       </Section>
 
       <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          Skills
+        <Heading as="h3" variant="section-title" style={{marginBottom: '2rem'}}>
+          Courses
         </Heading>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-        <CredlyBadge 
-          id="ba7f4454-da0c-4b63-90a1-6c2c7280c2c6"
-          host="https://www.credly.com"
-        ></CredlyBadge>
-        <CredlyBadge 
-          id="3a032413-10ff-430e-863f-72341a35e177"
-          host="https://www.credly.com"
-        ></CredlyBadge>
-        <CredlyBadge 
-          id="dc817c2c-502f-4b26-bd26-8d402d9b48f9"
-          host="https://www.credly.com"
-        ></CredlyBadge>
-         
+        <SimpleGrid columns={[2, 2, 2]} gap={6}>
+        <GridCourse 
+          href="https://www.credly.com/badges/ba7f4454-da0c-4b63-90a1-6c2c7280c2c6/public_url"
+          title="Python Essentials 1" 
+          thumbnail={thumbPyton}>
+          Issuer: Cisco
+        </GridCourse>
+        <GridCourse 
+          href="https://www.credly.com/badges/3a032413-10ff-430e-863f-72341a35e177/public_url"
+          title="Docker Essentials: A Developer Introduction" 
+          thumbnail={thumbDocker}>
+          Issuer: IBM
+        </GridCourse>
+        <GridCourse 
+          href="https://www.credly.com/badges/dc817c2c-502f-4b26-bd26-8d402d9b48f9/public_url"
+          title="Python for Data Science" 
+          thumbnail={thumbPythonDataScience}>
+          Issuer: IBM
+        </GridCourse>
         </SimpleGrid>
       </Section>
 

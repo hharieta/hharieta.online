@@ -5,16 +5,15 @@ import Image from 'next/image'
 import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
-const blurDataURL = 'data:image/svg+xml;base64,...';
-export const GridSkill= ({ children, href, title, thumbnail }) => (
+export const GridCourse= ({ children, href, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
     <LinkBox cursor="pointer">
       <Image
+        width={100}
         src={thumbnail}
         alt={title}
-        className="grid-skill-thumbnail"
+        className="grid-course-thumbnail"
         placeholder="blur"
-        blurDataURL={blurDataURL}
         loading="lazy"
       />
       <LinkOverlay href={href} target="_blank">
@@ -25,9 +24,9 @@ export const GridSkill= ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
-export const WorkGridItem = ({
+export const CourseGridItem = ({
   children,
-  category = 'works',
+  category = 'courses',
   id,
   title,
   thumbnail
@@ -42,7 +41,7 @@ export const WorkGridItem = ({
       <Image
         src={thumbnail}
         alt={title}
-        className="grid-skill-thumbnail"
+        className="grid-course-thumbnail"
         placeholder="blur"
       />
       <LinkOverlay as="div" href={`/${category}/${id}`}>
@@ -55,14 +54,13 @@ export const WorkGridItem = ({
   </Box>
 )
 
-export const GridSkillStyle = () => (
+export const GridCourseStyle = () => (
   <Global
     styles={`
-      .grid-skill-thumbnail {
+      .grid-course-thumbnail {
         border-radius: 12px;
-        max-width: 50%;
-        height: 50%;
-        margin: 0 auto;
+        max-width: 100%;
+        margin: auto;
       }
     `}
   />
