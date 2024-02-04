@@ -20,7 +20,7 @@ import {
         <P>
         This project is a simple CRUD application that uses AWS services to store and retrieve data on DynamoDB.
         based on the public project&apos;s{' '}
-            <Link href="https://github.com/sankharr/aws_crud" target="_blank" passHref scroll={false}>
+            <Link href="https://github.com/sankharr/aws_crud" target="_blank" scroll={false}>
                 Sankharr <ExternalLinkIcon mx="2px" />
             </Link>
             {' '}repository.

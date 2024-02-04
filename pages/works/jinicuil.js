@@ -19,7 +19,7 @@ import {
         </Title>
         <P>
         Maintenance of the{' '}
-            <Link href="https://jinicuil.com/" target="_blank" passHref scroll={false}>
+            <Link href="https://jinicuil.com/" target="_blank" scroll={false}>
                 Jinicuil Consultoría Digital <ExternalLinkIcon mx="2px" />
             </Link>
             {' '}website. Focused on using Bootstrap for style sheets
