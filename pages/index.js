@@ -23,6 +23,7 @@ import Image from 'next/image'
 import thumbPyton from '../public/images/courses/python-essentials-1.1.png'
 import thumbDocker from '../public/images/courses/docker-essentials.png'
 import thumbPythonDataScience from '../public/images/courses/python-for-data-science.png'
+import thumbPythonIbmAi from '../public/images/courses/python-ibm-ai.png'
 
 const email = () => {
   return process.env.EMAIL_ADDRESS;
@@ -153,6 +154,13 @@ const Home = () => (
           Courses
         </Heading>
         <SimpleGrid columns={[2, 2, 2]} gap={6}>
+        <GridCourse 
+          href="https://www.credly.com/badges/f5516c6a-baac-488f-901a-a1e6c3d463f9/public_url"
+          title="Python Project for AI & App. Dev." 
+          thumbnail={thumbPythonIbmAi}>
+          Issuer: Coursera |
+          Authorized: IBM
+        </GridCourse>
         <GridCourse 
           href="https://www.credly.com/badges/ba7f4454-da0c-4b63-90a1-6c2c7280c2c6/public_url"
           title="Python Essentials 1" 
