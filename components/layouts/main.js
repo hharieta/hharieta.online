@@ -17,13 +17,12 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name='title' content='Inge Gatovsky'/>
         <meta name="description" content="Gatovsky's homepage" />
         <meta name="author" content="Inge Gatovsky" />
         <meta name="author" content="inge gatovsky" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <meta name="twitter:title" content="Secta de Python-kun" />
+        <meta name="twitter:title" content="Inge Gatovsky" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@SectaPythonica" />
         <meta name="twitter:creator" content="@SectaPythonica" />
