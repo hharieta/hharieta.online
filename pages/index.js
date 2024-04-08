@@ -40,7 +40,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m acomputer systems engineering student from Mexico!
+        Hello, I&apos;m a computer systems engineering student from Mexico!
       </Box>
 
       <Box display={{ md: 'flex' }}>
