@@ -20,7 +20,7 @@ const Main = ({ children, router }) => {
         <meta name="description" content="Gatovsky's homepage" />
         <meta name="author" content="Inge Gatovsky" />
         <meta name="author" content="inge gatovsky" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.svg" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta name="twitter:title" content="Inge Gatovsky" />
         <meta name="twitter:card" content="summary_large_image" />
