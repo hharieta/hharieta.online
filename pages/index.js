@@ -119,19 +119,19 @@ const Home = () => (
           </BioTitle>
           <BioYear>2022 to present</BioYear>
           <chakra.lu style={{textAlign: 'justify', textIndent: 0}}>
-            <chakra.li display="inline-block" marginBottom="1em">
+            <chakra.li display="inline-block" marginBottom="0.5em">
               <ListIcon />
             Developed modules with Python using the Pulumi SDK for SaaS platforms.
             </chakra.li>
-            <chakra.li display="inline-block" marginBottom="1em">
+            <chakra.li display="inline-block" marginBottom="0.5em">
               <ListIcon />
             Utilized AWS services for cloud development, including API Gateway, Lambda, ECR, EC2, S3, DynamoDB, RDS, and CloudWatch.
             </chakra.li>
-            <chakra.li display="inline-block" marginBottom="1em">
+            <chakra.li display="inline-block" marginBottom="0.5em">
               <ListIcon />
             Automated processes with Bash and Docker for local development environments on Linux, Windows, and macOS systems.
             </chakra.li>
-            <chakra.li display="inline-block" marginBottom="1em">
+            <chakra.li display="inline-block" marginBottom="0.5em">
               <ListIcon />
             Refactored code and maintained GitHub repositories.
             </chakra.li>
