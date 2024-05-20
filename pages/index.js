@@ -27,7 +27,6 @@ import thumbPyton from '../public/images/courses/python-essentials-1.1.png'
 import thumbDocker from '../public/images/courses/docker-essentials.png'
 import thumbPythonDataScience from '../public/images/courses/python-for-data-science.png'
 import thumbPythonIbmAi from '../public/images/courses/python-ibm-ai.png'
-import Chakra from '../components/chakra'
 
 const email = () => {
   return process.env.EMAIL_ADDRESS;
