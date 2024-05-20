@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear, BioTitle, BioSubtitle, BioList, ListIcon } from '../components/bio'
+import { BioSection, BioYear, BioTitle, BioSubtitle, BioContent, BioList, ListIcon } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridCourse } from '../components/grid-course'
@@ -167,23 +167,23 @@ const Home = () => (
               </BioSubtitle>
             </Box>
             <Box>
-              <BioSubtitle>Academic Achievements: </BioSubtitle>
+              <BioContent>Academic Achievements: </BioContent>
             </Box>
             <Box>
               <BioList>
-                <chakra.li display="inline-block" marginBottom="1em">
+                <chakra.li display="inline-block" marginBottom="0.5em">
                   <ListIcon />
                 <Text as="span" fontWeight="600" >CODING ITCANCUN 2023</Text> - Awarded first place in an internal programming competition at <Link as={NextLink} href="https://www.itcancun.edu.mx/" target="_blank" passHref scroll={false}>ITCancún</Link>, demonstrating exceptional team collaboration.
                 </chakra.li>
-                <chakra.li display="inline-block" marginBottom="1em">
+                <chakra.li display="inline-block" marginBottom="0.5em">
                   <ListIcon />
                 <Text as="span" fontWeight="600" >INNOVATEC 2023</Text> - Developed a static website to promote the <Link as={NextLink} href="https://www.lasalsona.com/"  target='_blank' passHref scroll={false}>La Salsona</Link> project, which participated in the annual tecnology competition <Link as={NextLink} href="https://innova.tecnm.mx/" target="_blank" passHref scroll={false} > InnovaTecNM </Link> and won a place at the regional level.
                 </chakra.li>
-                <chakra.li display="inline-block" marginBottom="1em">
+                <chakra.li display="inline-block" marginBottom="0.5em">
                   <ListIcon />
                 <Text as="span" fontWeight="600" >CODING CUP TECNM 2022</Text> - Competed in a national team competition among all technological institutes in Mexico, achieving 68th place.
                 </chakra.li>
-                <chakra.li display="inline-block" marginBottom="1em">
+                <chakra.li display="inline-block" marginBottom="0.5em">
                   <ListIcon />
                 <Text as="span" fontWeight="600" >CODING ITCANCUN 2022</Text> - Participated in individual competitive programming at <Link as={NextLink} href="https://www.itcancun.edu.mx/" target="_blank" passHref scroll={false}>ITCancún</Link>, achieving 7th place.
                 </chakra.li>

@@ -18,11 +18,14 @@ export const BioTitle = styled.span`
 `
 export const BioSubtitle = styled.span`
   font-weight: 600;
+`
+export const BioContent = styled.span`
+  font-weight: 600;
   margin-left: 3.4em;
 `
 
 export const BioList = styled.ul`
-  padding-left: 2.4em;
+  
   text-indent: 0;
   text-align: justify;
   line-style-type: square;
@@ -36,7 +39,7 @@ export const ListIcon = () => (
       xmlns="http://www.w3.org/2000/svg"
     >
       <g>
-        <path class="st0" d="M481.875,299.344L512,292.219l-4.656-19.641l-24.25,5.734c0-0.328,0.016-0.641,0.016-0.969
+        <path className="st0" d="M481.875,299.344L512,292.219l-4.656-19.641l-24.25,5.734c0-0.328,0.016-0.641,0.016-0.969
       c0-38.078-10.531-72.781-28.969-102.359c15.438-53.938-13.438-124.547-13.438-124.547S387.813,73,357.719,100.297
       C327.109,91.063,292.578,88.094,256,88.094c-36.766,0-71.484,2.563-102.203,11.781c-30.156-27.109-82.5-49.438-82.5-49.438
       S42.406,121.063,57.859,175c-18.422,29.578-28.984,64.281-28.984,102.344c0,0.328,0.031,0.641,0.031,0.969l-24.25-5.734L0,292.219
