@@ -4,8 +4,8 @@ import { Box } from '@chakra-ui/react'
 
 const Footer = () => {
   return (
-    <Box align="center" opacity={0.4} fontSize="sm">
-      &copy; {new Date().getFullYear()} Takuya Matsuyama. All Rights Reserved.
+    <Box align="center" opacity={0.6} fontSize="sm" pt="2rem" >
+      Inge Gatovsky love cheap poems and expensive wine.
     </Box>
   )
 }

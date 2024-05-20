@@ -3,7 +3,10 @@
 import NextLink from 'next/link'
 import {
   Link,
+  Stack,
+  Text,
   Container,
+  chakra,
   Heading,
   Box,
   SimpleGrid,
@@ -14,7 +17,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+import { BioSection, BioYear, BioTitle, BioSubtitle, BioList, ListIcon } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridCourse } from '../components/grid-course'
@@ -24,6 +27,7 @@ import thumbPyton from '../public/images/courses/python-essentials-1.1.png'
 import thumbDocker from '../public/images/courses/docker-essentials.png'
 import thumbPythonDataScience from '../public/images/courses/python-for-data-science.png'
 import thumbPythonIbmAi from '../public/images/courses/python-ibm-ai.png'
+import Chakra from '../components/chakra'
 
 const email = () => {
   return process.env.EMAIL_ADDRESS;
@@ -78,15 +82,15 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About
         </Heading>
         <Paragraph>
           Gatovsky is a dedicated student pursuing a degree in Systems Engineering.
           Python is his favorite language and which he masters best, 
           he performs optimally in the use of technologies such as Docker, 
-          Pulumi SDK, Bash and K8S integrated with AWS and GCP cloud services.
+          Pulumi SDK, Bash and K8S integrated with AWS cloud services.
           Currently, he&apos;s actively contributing to a project named{' '}
-          <Link as={NextLink} href="https://archie-sandbox.cloudbuddies.online/" target="_blank" passHref scroll={false}>
+          <Link as={NextLink} href="https://www.cloudbuddies.io/" target="_blank" passHref scroll={false}>
           Archie
           </Link>
           {' '}where leverage his skills in infrastructure as code.
@@ -110,42 +114,83 @@ const Home = () => (
           Expirience
         </Heading>
         <BioSection style={{marginBottom: '1rem'}}>
-          <BioYear>2022 to present</BioYear>
-          Working on remote at{' '} <Link as={NextLink} href="https://www.cloudbuddies.io/" target="_blank" passHref scroll={false}>
+          <BioTitle> <Link as={NextLink} href="https://www.cloudbuddies.io/" target="_blank" passHref scroll={false}>
             Cloudbuddies
-          </Link> {' '}as jr Cloud Engineer.
-          <ul style={{textAlign: 'justify', listStyleType: 'square', textIndent: 0}}>
-            <li>
-            Module development with Python implementing Pulumi SDK for SaaS platforms
-            </li>
-            <li>
-            Use of AWS services for cloud development (API Gateway, Lambda, ECR, EC2, S3, DynamoDB, RDS, CloudWatch)
-            </li>
-            <li >
-            Process automation with Bash and Docker for local development environments on Linux, Windows and MacOS systems
-            </li>
-            <li >
-            Refactor code and maintenance of Github Repositories
-            </li>
-          </ul>
+          </Link> {' '}- Jr Cloud Engineer (Remote)
+          </BioTitle>
+          <BioYear>2022 to present</BioYear>
+          <chakra.lu style={{textAlign: 'justify', textIndent: 0}}>
+            <chakra.li display="inline-block" marginBottom="1em">
+              <ListIcon />
+            Developed modules with Python using the Pulumi SDK for SaaS platforms.
+            </chakra.li>
+            <chakra.li display="inline-block" marginBottom="1em">
+              <ListIcon />
+            Utilized AWS services for cloud development, including API Gateway, Lambda, ECR, EC2, S3, DynamoDB, RDS, and CloudWatch.
+            </chakra.li>
+            <chakra.li display="inline-block" marginBottom="1em">
+              <ListIcon />
+            Automated processes with Bash and Docker for local development environments on Linux, Windows, and macOS systems.
+            </chakra.li>
+            <chakra.li display="inline-block" marginBottom="1em">
+              <ListIcon />
+            Refactored code and maintained GitHub repositories.
+            </chakra.li>
+          </chakra.lu>
         </BioSection>
-        <BioSection style={{marginBottom: '1rem'}}>
-          <BioYear>2023 to present</BioYear>
-          Working part-time at{' '} 
+        <BioSection style={{marginBottom: '2rem'}}>
+          <BioTitle>
           <Link as={NextLink} href="https://jinicuil.com/" target="_blank" passHref scroll={false}>
             Jinicuil
-          </Link> {' '}as trainee in Networking
+          </Link> {' '}- Trainee in Networking Security (Remote)
+          </BioTitle>
+          <BioYear>2024 to present</BioYear>
         </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-        Academic Training
+        Education
         </Heading>
         <BioSection>
-          <BioYear>2020 to present</BioYear>
-          Pursuing a degree in Systems Engineering at Instituto Tecnológico de Cancún.
-          Currently starting the 4th year
+          <Stack>
+            <Box>
+              <BioTitle>
+              <Link as={NextLink} href="https://www.itcancun.edu.mx/" target="_blank" passHref scroll={false}>
+                Instituto Tecnológico de Cancún
+              </Link>
+              </BioTitle>
+              <BioYear>2020</BioYear>
+            </Box>
+            <Box>
+            <BioSubtitle>
+                Bachelor&apos;s Degree in Systems Engineering
+              </BioSubtitle>
+            </Box>
+            <Box>
+              <BioSubtitle>Academic Achievements: </BioSubtitle>
+            </Box>
+            <Box>
+              <BioList>
+                <chakra.li display="inline-block" marginBottom="1em">
+                  <ListIcon />
+                <Text as="span" fontWeight="600" >CODING ITCANCUN 2023</Text> - Awarded first place in an internal programming competition at <Link as={NextLink} href="https://www.itcancun.edu.mx/" target="_blank" passHref scroll={false}>ITCancún</Link>, demonstrating exceptional team collaboration.
+                </chakra.li>
+                <chakra.li display="inline-block" marginBottom="1em">
+                  <ListIcon />
+                <Text as="span" fontWeight="600" >INNOVATEC 2023</Text> - Developed a static website to promote the <Link as={NextLink} href="https://www.lasalsona.com/"  target='_blank' passHref scroll={false}>La Salsona</Link> project, which participated in the annual tecnology competition <Link as={NextLink} href="https://innova.tecnm.mx/" target="_blank" passHref scroll={false} > InnovaTecNM </Link> and won a place at the regional level.
+                </chakra.li>
+                <chakra.li display="inline-block" marginBottom="1em">
+                  <ListIcon />
+                <Text as="span" fontWeight="600" >CODING CUP TECNM 2022</Text> - Competed in a national team competition among all technological institutes in Mexico, achieving 68th place.
+                </chakra.li>
+                <chakra.li display="inline-block" marginBottom="1em">
+                  <ListIcon />
+                <Text as="span" fontWeight="600" >CODING ITCANCUN 2022</Text> - Participated in individual competitive programming at <Link as={NextLink} href="https://www.itcancun.edu.mx/" target="_blank" passHref scroll={false}>ITCancún</Link>, achieving 7th place.
+                </chakra.li>
+              </BioList>
+            </Box>
+          </Stack>
         </BioSection>
       </Section>
 
@@ -181,15 +226,6 @@ const Home = () => (
         </GridCourse>
         </SimpleGrid>
       </Section>
-
-      {/* <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          I ♥
-        </Heading>
-        <Paragraph>
-          Python, Linux, Docker, Bash, and Vim.
-        </Paragraph>
-      </Section> */}
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
