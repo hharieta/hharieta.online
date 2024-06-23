@@ -20,8 +20,9 @@ export const BioSubtitle = styled.span`
   font-weight: 600;
 `
 export const BioContent = styled.span`
-  font-weight: 600;
+  font-weight: 400;
   margin-left: 3.4em;
+  text-align: justify;
 `
 
 export const BioList = styled.ul`

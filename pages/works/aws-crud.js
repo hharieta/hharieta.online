@@ -19,7 +19,8 @@ import {
         </Title>
         <P>
         This project is a simple CRUD application that uses AWS services to store and retrieve data on DynamoDB.
-        based on the public project&apos;s{' '}
+        Currently used as a local component for <Link href="https://www.cloudbuddies.io/" target='_blank' passHref scroll={false}>Archie</Link> developers side.
+        Based on the public project&apos;s{' '}
             <Link href="https://github.com/sankharr/aws_crud" target="_blank" scroll={false}>
                 Sankharr <ExternalLinkIcon mx="2px" />
             </Link>

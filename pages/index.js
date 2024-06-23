@@ -27,6 +27,7 @@ import thumbPyton from '../public/images/courses/python-essentials-1.1.png'
 import thumbDocker from '../public/images/courses/docker-essentials.png'
 import thumbPythonDataScience from '../public/images/courses/python-for-data-science.png'
 import thumbPythonIbmAi from '../public/images/courses/python-ibm-ai.png'
+import thumbP4E from '../public/images/courses/p4e.png'
 
 const email = () => {
   return process.env.EMAIL_ADDRESS;
@@ -117,33 +118,35 @@ const Home = () => (
             Cloudbuddies
           </Link> {' '}- Jr Cloud Engineer (Remote)
           </BioTitle>
+          <Box textAlign={'right'} marginTop={'-1.5em'} marginRight={'-1em'}>
           <BioYear>2022 to present</BioYear>
+          </Box>
           <chakra.lu style={{textAlign: 'justify', textIndent: 0}}>
             <chakra.li display="inline-block" marginBottom="0.5em">
               <ListIcon />
-            Developed modules with Python using the Pulumi SDK for SaaS platforms.
+              Developed and deployed cloud infrastructure modules on AWS using Pulumi SDK and Python, ensuring efficiency and scalability (VPC, EC2, EKS, ALB, IAM, S3).
             </chakra.li>
             <chakra.li display="inline-block" marginBottom="0.5em">
               <ListIcon />
-            Utilized AWS services for cloud development, including API Gateway, Lambda, ECR, EC2, S3, DynamoDB, RDS, and CloudWatch.
+              Utilized AWS services including API Gateway, Lambda, ECR, S3, DynamoDB, and CloudWatch for the deployment of the Archie platform with Serverless.
             </chakra.li>
             <chakra.li display="inline-block" marginBottom="0.5em">
               <ListIcon />
-            Automated processes with Bash and Docker for local development environments on Linux, Windows, and macOS systems.
+              Managed and configured local development environments with Bash and Docker, enhancing system development and testing processes.
             </chakra.li>
             <chakra.li display="inline-block" marginBottom="0.5em">
               <ListIcon />
-            Refactored code and maintained GitHub repositories.
+              Conducted comprehensive testing of modules developed by team members, integrating them into the final codebase to ensure system consistency and functionality.
+            </chakra.li>
+            <chakra.li display="inline-block" marginBottom="0.5em">
+              <ListIcon />
+              Identified and implemented process improvements to enhance system performance and efficiency.
+            </chakra.li>
+            <chakra.li display="inline-block" marginBottom="0.5em">
+              <ListIcon />
+              Refactored code, documented processes, and maintained the project repository for streamlined project management.
             </chakra.li>
           </chakra.lu>
-        </BioSection>
-        <BioSection style={{marginBottom: '2rem'}}>
-          <BioTitle>
-          <Link as={NextLink} href="https://jinicuil.com/" target="_blank" passHref scroll={false}>
-            Jinicuil
-          </Link> {' '}- Trainee in Networking Security (Remote)
-          </BioTitle>
-          <BioYear>2024 to present</BioYear>
         </BioSection>
       </Section>
 
@@ -159,7 +162,9 @@ const Home = () => (
                 Instituto Tecnológico de Cancún
               </Link>
               </BioTitle>
+              <Box textAlign={'right'} marginTop={'-1.5em'} marginRight={'-1em'}>
               <BioYear>2020</BioYear>
+              </Box>
             </Box>
             <Box>
             <BioSubtitle>
@@ -173,19 +178,15 @@ const Home = () => (
               <BioList>
                 <chakra.li display="inline-block" marginBottom="0.5em">
                   <ListIcon />
-                <Text as="span" fontWeight="600" >CODING ITCANCUN 2023</Text> - Awarded first place in an internal programming competition at <Link as={NextLink} href="https://www.itcancun.edu.mx/" target="_blank" passHref scroll={false}>ITCancún</Link>, demonstrating exceptional team collaboration.
+                <Text as="span" fontWeight="600" >Competitive Programing - ITCancún 2023 – 1st place</Text> - Internal competitive programming contest at <Link as={NextLink} href="https://www.itcancun.edu.mx/" target="_blank" passHref scroll={false}>ITCancún</Link>, where exceptional team collaboration and problem solving were demonstrated.
                 </chakra.li>
                 <chakra.li display="inline-block" marginBottom="0.5em">
                   <ListIcon />
-                <Text as="span" fontWeight="600" >INNOVATEC 2023</Text> - Developed a static website to promote the <Link as={NextLink} href="https://www.lasalsona.com/"  target='_blank' passHref scroll={false}>La Salsona</Link> project, which participated in the annual tecnology competition <Link as={NextLink} href="https://innova.tecnm.mx/" target="_blank" passHref scroll={false} > InnovaTecNM </Link> and won a place at the regional level.
+                <Text as="span" fontWeight="600" >Competitive Programing - TECNM 2022 - 68th place</Text> - Team competition on all TECNM campuses in Mexico.
                 </chakra.li>
                 <chakra.li display="inline-block" marginBottom="0.5em">
                   <ListIcon />
-                <Text as="span" fontWeight="600" >CODING CUP TECNM 2022</Text> - Competed in a national team competition among all technological institutes in Mexico, achieving 68th place.
-                </chakra.li>
-                <chakra.li display="inline-block" marginBottom="0.5em">
-                  <ListIcon />
-                <Text as="span" fontWeight="600" >CODING ITCANCUN 2022</Text> - Participated in individual competitive programming at <Link as={NextLink} href="https://www.itcancun.edu.mx/" target="_blank" passHref scroll={false}>ITCancún</Link>, achieving 7th place.
+                <Text as="span" fontWeight="600" >Competitive Programing - ITCancún 2022 - 7th place</Text> - Participated in individual programming contest at <Link as={NextLink} href="https://www.itcancun.edu.mx/" target="_blank" passHref scroll={false}>ITCancún</Link>, where problem solving were demonstrated.
                 </chakra.li>
               </BioList>
             </Box>
@@ -194,8 +195,48 @@ const Home = () => (
       </Section>
 
       <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Awards
+        </Heading>
+        <BioSection>
+          <Stack>
+            <Box>
+              <BioTitle>
+              <Link as={NextLink} href="https://app.genius-arena.com/track_info/69/SISA---Detecci%C3%B3n-de-anomal%C3%ADas-por-an%C3%A1lisis-de-trafico-en-la-navegaci%C3%B3n" target="_blank" passHref scroll={false}>
+              Genius Arena – Jalisco Talent Land 2024 – 3rd place
+              </Link>
+              </BioTitle>
+              <Box textAlign={'right'} marginTop={'-1.5em'} marginRight={'-1em'}>
+              <BioYear>2024</BioYear>
+              </Box>
+            </Box>
+            <Box textAlign={'justify'}>
+              <BioContent>
+                As part of the SISA track: Anomaly detection by traffic analysis in navigation, I led the Redeemed Guys team in the SiSaGuard project.
+              </BioContent>
+            </Box>
+            <Box>
+              <BioTitle>
+              <Link as={NextLink} href="https://2024.talent-land.mx/speakers/gatovsky/" target="_blank" passHref scroll={false}>
+              Speaker – Jalisco Talent Land 2024 – Developer Land
+              </Link>
+              </BioTitle>
+              <Box textAlign={'right'} marginTop={'-1.5em'} marginRight={'-1em'}>
+              <BioYear>2024</BioYear>
+              </Box>
+            </Box>
+            <Box textAlign={'justify'}>
+              <BioContent>
+              Talk “Simplify and regulate your development processes in the cloud” as part of the promotion of the Archie by cloudbuddies platform.
+              </BioContent>
+            </Box>
+          </Stack>
+        </BioSection>
+      </Section>
+
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title" style={{marginBottom: '2rem'}}>
-          Courses
+          Training & Certifications
         </Heading>
         <SimpleGrid columns={[2, 2, 2]} gap={6}>
         <GridCourse 
@@ -222,6 +263,13 @@ const Home = () => (
           title="Python for Data Science" 
           thumbnail={thumbPythonDataScience}>
           Issuer: IBM
+        </GridCourse>
+        <GridCourse
+          href="https://coursera.org/share/4d49d52d398c0ce6deb480a45494e357"
+          title="Python Specialization" 
+          thumbnail={thumbP4E}>
+          Issuer: Coursera
+          Authorized: UMich
         </GridCourse>
         </SimpleGrid>
       </Section>

@@ -25,7 +25,7 @@ const Works = () => (
             title="emotion-analyzer"
             thumbnail={thumbEmotion}
           >
-            Emotion Analyzer is a final project for the IBM course implementing the IBM Watson Service AI.
+            Final project for the IBM course Dev... <span style={{fontWeight:600}}>[read more]</span>
           </WorkGridItem>
         </Section>
         <Section>
@@ -34,12 +34,12 @@ const Works = () => (
             title="AWS Crud"
             thumbnail={thumbAws}
           >
-            AWS CRUD Operations using Nextjs
+            AWS CRUD Operations using Nextjs... <span style={{fontWeight:600}}>[read more]</span>
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
           <WorkGridItem id="tucontrol" title="TuControl" thumbnail={thumbControl}>
-            A Flutter Application to establish serial communication with arduino.
+            A Flutter App for serial communication... <span style={{fontWeight:600}}>[read more]</span>
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
@@ -48,7 +48,7 @@ const Works = () => (
             title="Dockerized Docker"
             thumbnail={thumbScript}
           >
-            Docker socket inside a container
+            Docker environment for Archie project... <span style={{fontWeight:600}}>[read more]</span>
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
@@ -57,7 +57,7 @@ const Works = () => (
             title="Jinicuil"
             thumbnail={thumbJinicuil}
           >
-            Maintenance of the website
+            Maintenance of the website... <span style={{fontWeight:600}}>[read more]</span>
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
@@ -66,7 +66,7 @@ const Works = () => (
             title="ecd-play"
             thumbnail={thumbEcd}
           >
-            Differential Equations Quiz
+            Differential Equations Quiz... <span style={{fontWeight:600}}>[read more]</span>
           </WorkGridItem>
         </Section>
       </SimpleGrid>
