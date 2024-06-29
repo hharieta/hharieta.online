@@ -52,7 +52,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Héctor H. Arieta
           </Heading>
-          <p>Engineering Student ( Linux lover / Pythonist / Developer )</p>
+          <p>Engineering Student ( Pythonist | Cloud Engineer )</p>
         </Box>
         <Box
           flexShrink={0}
